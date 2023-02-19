@@ -4,8 +4,11 @@
 100 -> 1 (1 + 0 + 0)"""
 
 n = int(input('введите трезначное число '))
-a = n % 10
-b = (n//10)%10
-c = n//100
-result = a+b+c
-print(result)
+if n > 999 or n< 100:
+    print('ввели не трехзначное число')
+else:
+    a = n % 10
+    b = (n//10)%10
+    c = n//100
+    result = a+b+c
+    print(result)
